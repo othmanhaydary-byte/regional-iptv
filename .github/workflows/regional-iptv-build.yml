@@ -13,7 +13,7 @@ jobs:
       - name: Combine IPTV channels
         shell: bash
         run: |
-          python3 - &lt;&lt;'PY'
+          python3 - <<'PY'
           import re
           import urllib.request
 
@@ -77,7 +77,7 @@ jobs:
               pending = None
             print(group, added)
 
-          if len(lines) &lt; 10:
+          if len(lines) < 10:
             raise RuntimeError('Not enough channels downloaded')
           with open('regional.m3u', 'w', encoding='utf-8') as file:
             file.write('\n'.join(lines) + '\n')
