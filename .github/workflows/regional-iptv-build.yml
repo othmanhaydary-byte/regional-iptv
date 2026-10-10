@@ -45,7 +45,17 @@ jobs:
               '#EXTINF:-1 tvg-name="Movie Playback Test" group-title="English Movies",Movie Playback Test',
               movie_url
           ]
-          seen.add(movie_url)
+          seen.add(movie_url)        
+          kurdish_channels = [
+              ('Kurdmax', 'https://6476e46b58f91.streamlock.net/liveTrans/KurdmaxS0rani!/playlist.m3u8'),
+              ('Kurdmax Show', 'https://6476e46b58f91.streamlock.net/liveTrans/SHOW1/playlist.m3u8'),
+              ('Kurdmax Music', 'https://6476e46b58f91.streamlock.net/music/livestream/playlist.m3u8'),
+          ]
+          for name, url in kurdish_channels:
+              if url not in seen:
+                  lines.append(f'#EXTINF:-1 tvg-name="{name}" group-title="Kurdish",{name}')
+                  lines.append(url)
+                  seen.add(url)
           for group, path in sources:
             url = 'https://iptv-org.github.io/iptv/' + path + '.m3u'
             try:
