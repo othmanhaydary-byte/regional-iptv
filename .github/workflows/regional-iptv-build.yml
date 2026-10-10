@@ -40,7 +40,12 @@ jobs:
           fite = 'https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8'
           lines += ['#EXTINF:-1 tvg-name="FITE 24/7" group-title="Sports",FITE 24/7', fite]
           seen.add(fite)
-
+          movie_url = 'https://archive.org/download/ArcherProductionsInc/DuckandC1951.mp4'
+          lines += [
+              '#EXTINF:-1 tvg-name="Movie Playback Test" group-title="English Movies",Movie Playback Test',
+              movie_url
+          ]
+          seen.add(movie_url)
           for group, path in sources:
             url = 'https://iptv-org.github.io/iptv/' + path + '.m3u'
             try:
