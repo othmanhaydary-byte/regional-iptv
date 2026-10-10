@@ -3,6 +3,12 @@
 https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 #EXTINF:-1 tvg-name="Movie Playback Test" group-title="English Movies",Movie Playback Test
 https://archive.org/download/ArcherProductionsInc/DuckandC1951.mp4
+#EXTINF:-1 tvg-name="Kurdmax" group-title="Kurdish",Kurdmax
+https://6476e46b58f91.streamlock.net/liveTrans/KurdmaxS0rani!/playlist.m3u8
+#EXTINF:-1 tvg-name="Kurdmax Show" group-title="Kurdish",Kurdmax Show
+https://6476e46b58f91.streamlock.net/liveTrans/SHOW1/playlist.m3u8
+#EXTINF:-1 tvg-name="Kurdmax Music" group-title="Kurdish",Kurdmax Music
+https://6476e46b58f91.streamlock.net/music/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="4Kurd.fr@SD" tvg-name="4Kurd" tvg-logo="https://www.aparatchi.com/images/chanells-logo/4kurd.svg" group-title="Kurdish",4Kurd
 https://4kuhls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AfarinBaxcha.iq@SD" tvg-name="Afarin Baxcha (1080p)" tvg-logo="https://i.postimg.cc/4xRkBDRx/Afarin-Baxcha-200.png" group-title="Kurdish",Afarin Baxcha (1080p)
